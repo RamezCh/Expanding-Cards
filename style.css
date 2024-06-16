@@ -105,3 +105,38 @@ input:checked + label .description {
 .card[for="card4"] {
     background-image: url(images/land.jpg);
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    input:checked + label {
+        flex: 1 1 400px;
+        max-width: 400px;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+
+    input:not(:checked) + .card > .row > .icon {
+        margin-top: 50px;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        max-width: 100%;
+    }
+
+    input:checked + label {
+        flex: 1 1 100%;
+    }
+}
