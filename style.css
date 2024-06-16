@@ -129,6 +129,14 @@ input:checked + label .description {
         align-items: center;
         justify-content: center;
     }
+
+    input:checked + .card:first-of-type > .row > .description h4 {
+        color: #000000;
+    }
+    
+    input:checked + .card:first-of-type > .row > .description p {
+        color: #c29500;
+    }
 }
 
 @media (max-width: 480px) {
